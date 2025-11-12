@@ -17,7 +17,7 @@
 |-------|--------|---------------|------------|-----------|
 | **ModelScope** | Human Actions | 9.48 hours | 0.1036 final loss | Scaled to 10K videos |
 | **CogVideoX-2B** | Fashion | 62 minutes | **82.2% quality improvement** | 4.5/10 → 8.2/10 rating |
-| **AnimateDiff LoRA** | Anime | **8 minutes** | 30.2% temporal consistency | Only 16M params (1% of base) |
+| **AnimateDiff LoRA** | Anime | **64 minutes** | 30.2% temporal consistency | Only 16M params (1% of base) |
 
 ###  Notable Results
 
