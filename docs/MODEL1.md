@@ -1,12 +1,12 @@
 # Model 1: ModelScope - Human Action Video Generation
 
-## 🎯 Overview
+##  Overview
 
 ModelScope is a diffusion-based text-to-video generation model specifically trained for human action synthesis. This implementation demonstrates large-scale training on 10,000 videos from the Something-Something V2 dataset, achieving production-ready convergence with a final loss of 0.1036.
 
 ---
 
-## 📊 Key Specifications
+##  Key Specifications
 
 | Metric | Value |
 |--------|-------|
@@ -22,7 +22,7 @@ ModelScope is a diffusion-based text-to-video generation model specifically trai
 
 ---
 
-## 🏗️ Architecture Details
+## ️ Architecture Details
 
 ### Model Components
 
@@ -69,7 +69,7 @@ Output: Generated Video (16-24 frames)
 
 ---
 
-## 📚 Dataset: Something-Something V2
+##  Dataset: Something-Something V2
 
 ### Dataset Characteristics
 
@@ -101,7 +101,7 @@ Output: Generated Video (16-24 frames)
 
 ---
 
-## 🚀 Training Configuration
+##  Training Configuration
 
 ### Hyperparameters
 
@@ -171,7 +171,7 @@ pin_memory: true
 
 ---
 
-## 📈 Results & Performance
+##  Results & Performance
 
 ### Training Metrics
 
@@ -200,14 +200,14 @@ pin_memory: true
 
 #### Qualitative Observations
 
-✅ **Strengths**:
+ **Strengths**:
 - High-quality human action generation
 - Smooth temporal transitions
 - Good text-action alignment
 - Realistic object interactions
 - Diverse action types supported
 
-⚠️ **Limitations**:
+️ **Limitations**:
 - Limited to 256x256 resolution
 - 16-24 frame constraint (short videos)
 - Occasional motion artifacts in complex scenes
@@ -215,12 +215,12 @@ pin_memory: true
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Training
 
 See the complete training notebook:
-📓 [notebooks/modelscope/model_1_production_code_google_colab.ipynb](../notebooks/modelscope/model_1_production_code_google_colab.ipynb)
+ [notebooks/modelscope/model_1_production_code_google_colab.ipynb](../notebooks/modelscope/model_1_production_code_google_colab.ipynb)
 
 ### Inference Example
 
@@ -256,11 +256,11 @@ clip.write_videofile("output.mp4")
 ### Evaluation
 
 See the evaluation notebook:
-📓 [notebooks/modelscope/model_1_Video_Evaluation_Metrics.ipynb](../notebooks/modelscope/model_1_Video_Evaluation_Metrics.ipynb)
+ [notebooks/modelscope/model_1_Video_Evaluation_Metrics.ipynb](../notebooks/modelscope/model_1_Video_Evaluation_Metrics.ipynb)
 
 ---
 
-## 🔧 Optimization Techniques
+##  Optimization Techniques
 
 ### Memory Optimization
 1. **Gradient Checkpointing**: Reduces memory by 40%
@@ -279,7 +279,7 @@ See the evaluation notebook:
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 
 ### 1. **Scale Matters**
    - 10,000 videos provide robust action coverage
@@ -303,7 +303,7 @@ See the evaluation notebook:
 
 ---
 
-## 📁 File Structure
+##  File Structure
 
 ```
 models/modelscope/
@@ -326,7 +326,7 @@ results/modelscope/
 
 ---
 
-## 🔗 References
+##  References
 
 ### Dataset
 **Something-Something V2 Dataset**
@@ -354,7 +354,7 @@ For complete citations and licensing information, see [CITATIONS.md](../CITATION
 
 ---
 
-## 🤝 Next Steps
+##  Next Steps
 
 ### Potential Improvements
 1. **Higher Resolution**: Train at 512x512 for better quality

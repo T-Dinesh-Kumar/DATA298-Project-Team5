@@ -22,9 +22,9 @@ results/
 
 ## Important Notes
 
-⚠️ **Large Files**: Video outputs are NOT committed to Git (see `.gitignore`)
-⚠️ **Storage**: Results can be large (GB-TB depending on number of samples)
-⚠️ **Backup**: Use cloud storage (Google Drive, S3, etc.) for archival
+️ **Large Files**: Video outputs are NOT committed to Git (see `.gitignore`)
+️ **Storage**: Results can be large (GB-TB depending on number of samples)
+️ **Backup**: Use cloud storage (Google Drive, S3, etc.) for archival
 
 ## What Goes Here
 

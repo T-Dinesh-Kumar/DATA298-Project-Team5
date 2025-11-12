@@ -4,7 +4,7 @@ Get up and running with text-to-video generation in minutes!
 
 ---
 
-## 🚀 5-Minute Setup (Inference Only)
+##  5-Minute Setup (Inference Only)
 
 If you just want to try generating videos with the pre-trained models:
 
@@ -66,11 +66,11 @@ Run it:
 python generate_video.py
 ```
 
-**That's it! You've generated your first video! 🎉**
+**That's it! You've generated your first video! **
 
 ---
 
-## 📊 Model Comparison - Which One to Use?
+##  Model Comparison - Which One to Use?
 
 | Use Case | Model | Why? | Time to Results |
 |----------|-------|------|-----------------|
@@ -80,7 +80,7 @@ python generate_video.py
 
 ---
 
-## 🎯 Model-Specific Quick Starts
+##  Model-Specific Quick Starts
 
 ### Model 1: ModelScope (Human Actions)
 
@@ -112,7 +112,7 @@ clip.write_videofile("action_video.mp4")
 
 ---
 
-### Model 2: CogVideoX-2B (Fashion) ⭐ Recommended
+### Model 2: CogVideoX-2B (Fashion)  Recommended
 
 **Best for**: Fashion, e-commerce, garment visualization
 **Achievement**: 82.2% quality improvement!
@@ -144,7 +144,7 @@ clip.write_videofile("fashion_video.mp4")
 
 ---
 
-### Model 3: AnimateDiff LoRA (Anime) ⚡ Fastest
+### Model 3: AnimateDiff LoRA (Anime)  Fastest
 
 **Best for**: Anime, animation studios, content creation
 **Achievement**: 8-minute training, 30.2% temporal improvement!
@@ -183,7 +183,7 @@ clip.write_videofile("anime_video.mp4")
 
 ---
 
-## 💡 Pro Tips
+##  Pro Tips
 
 ### Memory-Efficient Generation
 
@@ -222,10 +222,10 @@ video = pipe(prompt, num_inference_steps=50)  # More steps = better quality
 
 ---
 
-## 📚 Next Steps
+##  Next Steps
 
 ### For Users (Just Generate Videos)
-1. ✅ You're done! Generate videos with the quick starts above
+1.  You're done! Generate videos with the quick starts above
 2. Experiment with different prompts
 3. Try different models for different use cases
 
@@ -249,7 +249,7 @@ video = pipe(prompt, num_inference_steps=50)  # More steps = better quality
 
 ---
 
-## 🐛 Common Issues & Solutions
+##  Common Issues & Solutions
 
 ### Issue: "CUDA out of memory"
 **Solution**: Use memory-efficient features (see Pro Tips above)
@@ -271,7 +271,7 @@ huggingface-cli login
 
 ---
 
-## 📊 Benchmarks (For Reference)
+##  Benchmarks (For Reference)
 
 | Model | Inference Time | GPU Memory | Video Quality | Best Use Case |
 |-------|----------------|------------|---------------|---------------|
@@ -283,7 +283,7 @@ huggingface-cli login
 
 ---
 
-## 🎯 Sample Prompts
+##  Sample Prompts
 
 ### Fashion (CogVideoX)
 - "A model wearing a flowing blue evening gown with sequins"
@@ -305,7 +305,7 @@ huggingface-cli login
 
 ---
 
-## 🤝 Community & Support
+##  Community & Support
 
 - **Issues**: Open a GitHub issue
 - **Questions**: [Your Email]
@@ -314,16 +314,16 @@ huggingface-cli login
 
 ---
 
-## ⭐ Like This Project?
+##  Like This Project?
 
 If you find this project helpful:
-1. ⭐ Star the repository
-2. 🔗 Share on LinkedIn/Twitter
-3. 📝 Write about your experience
-4. 🤝 Contribute improvements
+1.  Star the repository
+2.  Share on LinkedIn/Twitter
+3.  Write about your experience
+4.  Contribute improvements
 
 ---
 
-**Now go create something amazing! 🎬🚀**
+**Now go create something amazing! **
 
 *Last Updated: November 2024*

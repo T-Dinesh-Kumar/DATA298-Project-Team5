@@ -1,12 +1,12 @@
 # Model 3: AnimateDiff LoRA - Anime Video Generation
 
-## 🎯 Overview
+##  Overview
 
 AnimateDiff with LoRA (Low-Rank Adaptation) demonstrates the power of parameter-efficient fine-tuning for anime-style video generation. Training only **16 million parameters (1% of the base model)** for just **8 minutes**, this implementation achieved a **30.2% temporal consistency improvement**, making it the fastest and most efficient model in the project.
 
 ---
 
-## 📊 Key Specifications
+##  Key Specifications
 
 | Metric | Value |
 |--------|-------|
@@ -15,7 +15,7 @@ AnimateDiff with LoRA (Low-Rank Adaptation) demonstrates the power of parameter-
 | **Dataset** | Custom Anime Dataset |
 | **Training Videos** | 200 anime videos |
 | **GPU** | NVIDIA H200 140GB |
-| **Training Time** | **8 minutes** ⚡ |
+| **Training Time** | **8 minutes**  |
 | **Trainable Parameters** | **16M (1% of base)** |
 | **Temporal Consistency** | **+30.2% improvement** |
 | **LoRA Rank** | 16 |
@@ -25,7 +25,7 @@ AnimateDiff with LoRA (Low-Rank Adaptation) demonstrates the power of parameter-
 
 ---
 
-## 🏆 Outstanding Achievements
+##  Outstanding Achievements
 
 ### Efficiency Metrics
 
@@ -39,17 +39,17 @@ AnimateDiff with LoRA (Low-Rank Adaptation) demonstrates the power of parameter-
 
 ### Why This Approach is Revolutionary
 
-💡 **Parameter Efficiency**: Train only 1% of parameters while improving quality by 30.2%
+ **Parameter Efficiency**: Train only 1% of parameters while improving quality by 30.2%
 
-⚡ **Speed**: 8-minute training enables rapid iteration and experimentation
+ **Speed**: 8-minute training enables rapid iteration and experimentation
 
-💰 **Cost-Effective**: Minimal compute requirements compared to full fine-tuning
+ **Cost-Effective**: Minimal compute requirements compared to full fine-tuning
 
-🎯 **Quality**: Achieves significant improvements without massive datasets
+ **Quality**: Achieves significant improvements without massive datasets
 
 ---
 
-## 🏗️ Architecture Details
+## ️ Architecture Details
 
 ### Model Components
 
@@ -106,7 +106,7 @@ Output: Anime Video (512x512, 16 frames)
 
 ---
 
-## 📚 Dataset: MSR-VTT (Anime Subset)
+##  Dataset: MSR-VTT (Anime Subset)
 
 ### Dataset Overview
 
@@ -169,7 +169,7 @@ Output: Anime Video (512x512, 16 frames)
 
 ---
 
-## 🚀 Training Configuration
+##  Training Configuration
 
 ### LoRA Fine-tuning Strategy
 
@@ -257,7 +257,7 @@ num_inference_steps: 25  # Fast sampling
 
 ---
 
-## 📈 Results & Performance
+##  Results & Performance
 
 ### Temporal Consistency Improvement: +30.2%
 
@@ -302,20 +302,20 @@ num_inference_steps: 25  # Fast sampling
 
 ### Qualitative Analysis
 
-✅ **Major Improvements**:
+ **Major Improvements**:
 - **Smoother Motion**: 43.5% improvement in motion smoothness
 - **Character Consistency**: Same character appearance across frames (31% improvement)
 - **Anime Style Preservation**: Maintains distinct anime aesthetic
 - **Hair/Clothing Dynamics**: More realistic flow and movement
 - **Scene Coherence**: Better temporal continuity
 
-✅ **LoRA-Specific Benefits**:
+ **LoRA-Specific Benefits**:
 - **Fast Training**: 8 minutes enables rapid iteration
 - **Low Resources**: Fits on consumer GPUs
 - **Swap-able**: Easy to switch between different LoRA styles
 - **Preserves Base Quality**: Retains SD + AnimateDiff strengths
 
-⚠️ **Limitations**:
+️ **Limitations**:
 - **Short Videos**: Limited to 16 frames (2 seconds)
 - **Resolution**: 512x512 (not HD)
 - **Anime-Specific**: Not general-purpose
@@ -323,12 +323,12 @@ num_inference_steps: 25  # Fast sampling
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Complete Training & Evaluation
 
 See the comprehensive notebook (includes both training and evaluation):
-📓 [notebooks/animatediff/model_3_Final-Model3.ipynb](../notebooks/animatediff/model_3_Final-Model3.ipynb)
+ [notebooks/animatediff/model_3_Final-Model3.ipynb](../notebooks/animatediff/model_3_Final-Model3.ipynb)
 
 ### Inference Example
 
@@ -418,7 +418,7 @@ pipe.unet.save_pretrained("anime_lora")
 
 ---
 
-## 🔧 LoRA Technical Deep Dive
+##  LoRA Technical Deep Dive
 
 ### What is LoRA?
 
@@ -470,7 +470,7 @@ These are most effective for temporal consistency improvements.
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 
 ### 1. **Parameter Efficiency is Transformative**
    - 1% trainable parameters → 30.2% quality improvement
@@ -499,7 +499,7 @@ These are most effective for temporal consistency improvements.
 
 ---
 
-## 🎯 Applications
+##  Applications
 
 ### Animation Studios
 - **Rapid Prototyping**: Generate animation concepts in minutes
@@ -523,7 +523,7 @@ These are most effective for temporal consistency improvements.
 
 ---
 
-## 📁 File Structure
+##  File Structure
 
 ```
 models/animatediff/
@@ -552,7 +552,7 @@ results/animatediff/
 
 ---
 
-## 🔗 References
+##  References
 
 ### Dataset
 **MSR-VTT Dataset**
@@ -582,17 +582,17 @@ For complete citations and licensing information, see [CITATIONS.md](../CITATION
 
 ---
 
-## 🏆 Achievements Summary
+##  Achievements Summary
 
-⚡ **8-Minute Training** - Fastest model to production quality
-💡 **99% Parameter Reduction** - Only 16M trainable (1% of base)
-📈 **30.2% Temporal Improvement** - Smoother, more coherent animations
-🎯 **200-Video Dataset** - Minimal data requirement
-💰 **Consumer GPU Friendly** - ~45GB VRAM (accessible hardware)
+ **8-Minute Training** - Fastest model to production quality
+ **99% Parameter Reduction** - Only 16M trainable (1% of base)
+ **30.2% Temporal Improvement** - Smoother, more coherent animations
+ **200-Video Dataset** - Minimal data requirement
+ **Consumer GPU Friendly** - ~45GB VRAM (accessible hardware)
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 ### Short-term
 1. **Higher Resolution**: Train LoRA for 1024x1024

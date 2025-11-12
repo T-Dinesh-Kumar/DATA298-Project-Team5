@@ -4,7 +4,7 @@ This guide will help you set up the environment and get started with the text-to
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 ### Hardware Requirements
 
@@ -24,7 +24,7 @@ This guide will help you set up the environment and get started with the text-to
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Step 1: Clone the Repository
 
@@ -101,7 +101,7 @@ pip install peft diffusers accelerate
 
 ---
 
-## 📁 Dataset Setup
+##  Dataset Setup
 
 ### Model 1: ModelScope (Something-Something V2)
 
@@ -171,7 +171,7 @@ pip install peft diffusers accelerate
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -207,7 +207,7 @@ python -c "from diffusers import MotionAdapter; MotionAdapter.from_pretrained('a
 
 ---
 
-## 📊 Running the Models
+##  Running the Models
 
 ### Model 1: ModelScope
 
@@ -247,7 +247,7 @@ python train_animatediff_lora.py --config configs/animatediff_config.yaml
 
 ---
 
-## 🧪 Inference (After Training)
+##  Inference (After Training)
 
 ### Quick Inference Examples
 
@@ -290,7 +290,7 @@ video = pipe("Anime girl with blue hair walking", num_frames=16).frames[0]
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -355,7 +355,7 @@ gradient_accumulation_steps: 16  # Effective batch size = 16
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - **Project Documentation**: See [docs/](../docs/) folder
 - **Model 1 Details**: [docs/MODEL1.md](MODEL1.md)
@@ -365,7 +365,7 @@ gradient_accumulation_steps: 16  # Effective batch size = 16
 
 ---
 
-## 🎓 Academic Use
+##  Academic Use
 
 This project is part of SJSU DATA 298B Capstone. For academic use:
 
@@ -384,7 +384,7 @@ This project is part of SJSU DATA 298B Capstone. For academic use:
 
 ---
 
-## 💬 Support
+##  Support
 
 **For issues:**
 - Open a GitHub issue
@@ -396,6 +396,6 @@ This project is part of SJSU DATA 298B Capstone. For academic use:
 
 ---
 
-**Happy training! 🚀**
+**Happy training! **
 
 *Last Updated: November 2024*

@@ -4,7 +4,7 @@ This document provides proper citations for all datasets, models, and research p
 
 ---
 
-## 📚 Datasets
+##  Datasets
 
 ### Something-Something V2 Dataset (Model 1)
 
@@ -100,7 +100,7 @@ This document provides proper citations for all datasets, models, and research p
 
 ---
 
-## 🤖 Models & Architectures
+##  Models & Architectures
 
 ### ModelScope Text-to-Video
 
@@ -181,7 +181,7 @@ This document provides proper citations for all datasets, models, and research p
 
 ---
 
-## 📖 Foundational Research Papers
+##  Foundational Research Papers
 
 ### Diffusion Models
 
@@ -260,7 +260,7 @@ This document provides proper citations for all datasets, models, and research p
 
 ---
 
-## 🛠️ Software & Libraries
+## ️ Software & Libraries
 
 ### PyTorch
 ```bibtex
@@ -297,7 +297,7 @@ This document provides proper citations for all datasets, models, and research p
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 ### Fréchet Video Distance (FVD)
 ```bibtex
@@ -322,7 +322,7 @@ This document provides proper citations for all datasets, models, and research p
 
 ---
 
-## 🎓 How to Cite This Project
+##  How to Cite This Project
 
 If you use this code or methodology in your research, please cite:
 
@@ -339,7 +339,7 @@ If you use this code or methodology in your research, please cite:
 
 ---
 
-## 📜 License Compliance
+##  License Compliance
 
 ### Dataset Licenses
 - **Something-Something V2**: Academic use only. Contact Qualcomm for commercial licensing.
@@ -363,7 +363,7 @@ If you use this code or methodology in your research, please cite:
 
 ---
 
-## ⚠️ Important Usage Notes
+## ️ Important Usage Notes
 
 ### Academic Use
 This project and its datasets are intended for academic research purposes. If you're using this for:
@@ -386,7 +386,7 @@ If considering commercial applications:
 
 ---
 
-## 📞 Questions About Citations?
+##  Questions About Citations?
 
 If you have questions about:
 - Dataset licensing
@@ -400,7 +400,7 @@ If you have questions about:
 
 ---
 
-## 🔄 Updates
+##  Updates
 
 This citations file will be updated as new datasets, models, or papers are incorporated into the project.
 
@@ -408,7 +408,7 @@ This citations file will be updated as new datasets, models, or papers are incor
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - **Something-Something V2 Official Page**: https://www.qualcomm.com/developer/software/something-something-v-2-dataset
 - **ModelScope**: https://modelscope.cn/
@@ -419,4 +419,4 @@ This citations file will be updated as new datasets, models, or papers are incor
 
 ---
 
-**Thank you to all researchers and organizations who made their work publicly available!** 🙏
+**Thank you to all researchers and organizations who made their work publicly available!** 

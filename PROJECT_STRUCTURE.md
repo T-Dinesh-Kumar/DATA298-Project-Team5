@@ -1,89 +1,89 @@
-# 📁 Text-to-Video Generation - Project Structure
+#  Text-to-Video Generation - Project Structure
 
 This document provides a complete overview of the repository structure and organization.
 
 ---
 
-## 🌳 Complete Directory Tree
+##  Complete Directory Tree
 
 ```
 text-to-video-generation/
 │
-├── 📄 README.md                          # ⭐ Main project overview and achievements
-├── 📄 LICENSE                            # MIT License with third-party attributions
-├── 📄 CITATIONS.md                       # 📚 Complete citations and references
-├── 📄 requirements.txt                   # Python dependencies
-├── 📄 .gitignore                        # Comprehensive ML project .gitignore
-├── 📄 PROJECT_STRUCTURE.md              # This file
+├──  README.md                          #  Main project overview and achievements
+├──  LICENSE                            # MIT License with third-party attributions
+├──  CITATIONS.md                       #  Complete citations and references
+├──  requirements.txt                   # Python dependencies
+├──  .gitignore                        # Comprehensive ML project .gitignore
+├──  PROJECT_STRUCTURE.md              # This file
 │
-├── 📂 configs/                           # Training configurations
+├──  configs/                           # Training configurations
 │   ├── modelscope_config.yaml           # Model 1 hyperparameters
 │   ├── cogvideox_config.yaml            # Model 2 fine-tuning config
 │   └── animatediff_config.yaml          # Model 3 LoRA configuration
 │
-├── 📂 docs/                              # Documentation
-│   ├── 📄 SETUP.md                       # Complete setup guide
-│   ├── 📄 QUICK_START.md                 # 5-minute quick start
-│   ├── 📄 MODEL1.md                      # ModelScope documentation
-│   ├── 📄 MODEL2.md                      # CogVideoX documentation
-│   ├── 📄 MODEL3.md                      # AnimateDiff LoRA documentation
-│   └── 📄 Team5-Workbook2.docx          # Comprehensive project report
+├──  docs/                              # Documentation
+│   ├──  SETUP.md                       # Complete setup guide
+│   ├──  QUICK_START.md                 # 5-minute quick start
+│   ├──  MODEL1.md                      # ModelScope documentation
+│   ├──  MODEL2.md                      # CogVideoX documentation
+│   ├──  MODEL3.md                      # AnimateDiff LoRA documentation
+│   └──  Team5-Workbook2.docx          # Comprehensive project report
 │
-├── 📂 models/                            # Model implementations
-│   ├── 📄 README.md                      # Models directory guide
-│   ├── 📂 modelscope/                   # Model 1 architecture
-│   ├── 📂 cogvideox/                    # Model 2 architecture
-│   └── 📂 animatediff/                  # Model 3 LoRA setup
+├──  models/                            # Model implementations
+│   ├──  README.md                      # Models directory guide
+│   ├──  modelscope/                   # Model 1 architecture
+│   ├──  cogvideox/                    # Model 2 architecture
+│   └──  animatediff/                  # Model 3 LoRA setup
 │
-├── 📂 notebooks/                         # Jupyter notebooks
-│   ├── 📄 README.md                      # Notebooks guide
-│   ├── 📂 modelscope/
-│   │   ├── 📓 model_1_production_code_google_colab.ipynb
-│   │   └── 📓 model_1_Video_Evaluation_Metrics.ipynb
-│   ├── 📂 cogvideox/
-│   │   └── 📓 model_2_Fashion_Dataset_final_p1.ipynb
-│   └── 📂 animatediff/
-│       └── 📓 model_3_Final-Model3.ipynb
+├──  notebooks/                         # Jupyter notebooks
+│   ├──  README.md                      # Notebooks guide
+│   ├──  modelscope/
+│   │   ├──  model_1_production_code_google_colab.ipynb
+│   │   └──  model_1_Video_Evaluation_Metrics.ipynb
+│   ├──  cogvideox/
+│   │   └──  model_2_Fashion_Dataset_final_p1.ipynb
+│   └──  animatediff/
+│       └──  model_3_Final-Model3.ipynb
 │
-└── 📂 results/                           # Generated outputs (not in Git)
-    ├── 📄 README.md                      # Results directory guide
-    ├── 📂 modelscope/
-    │   ├── 📂 samples/                  # Generated videos
-    │   ├── 📂 metrics/                  # Evaluation results
-    │   └── 📂 training_logs/            # TensorBoard logs
-    ├── 📂 cogvideox/
-    │   ├── 📂 samples/
-    │   ├── 📂 metrics/
-    │   └── 📂 training_logs/
-    └── 📂 animatediff/
-        ├── 📂 samples/
-        ├── 📂 metrics/
-        └── 📂 training_logs/
+└──  results/                           # Generated outputs (not in Git)
+    ├──  README.md                      # Results directory guide
+    ├──  modelscope/
+    │   ├──  samples/                  # Generated videos
+    │   ├──  metrics/                  # Evaluation results
+    │   └──  training_logs/            # TensorBoard logs
+    ├──  cogvideox/
+    │   ├──  samples/
+    │   ├──  metrics/
+    │   └──  training_logs/
+    └──  animatediff/
+        ├──  samples/
+        ├──  metrics/
+        └──  training_logs/
 ```
 
 ---
 
-## 📚 Documentation Hierarchy
+##  Documentation Hierarchy
 
-### 🎯 For First-Time Users
+###  For First-Time Users
 1. **Start here**: [README.md](README.md) - Overview and key achievements
 2. **Quick demo**: [docs/QUICK_START.md](docs/QUICK_START.md) - Generate videos in 5 minutes
 3. **Full setup**: [docs/SETUP.md](docs/SETUP.md) - Complete installation guide
 
-### 🔬 For Researchers
+###  For Researchers
 1. **Model 1**: [docs/MODEL1.md](docs/MODEL1.md) - ModelScope (10K videos, 9.48 hours)
 2. **Model 2**: [docs/MODEL2.md](docs/MODEL2.md) - CogVideoX (82.2% improvement)
 3. **Model 3**: [docs/MODEL3.md](docs/MODEL3.md) - AnimateDiff LoRA (8 minutes)
 4. **Full report**: [docs/Team5-Workbook2.docx](docs/Team5-Workbook2.docx)
 
-### 💼 For Recruiters
+###  For Recruiters
 1. **Main README**: [README.md](README.md) - Achievements and skills demonstrated
 2. **Quick overview**: Check "Key Achievements" and "For Recruiters" sections
 3. **Technical depth**: Browse model-specific documentation
 
 ---
 
-## 🗂️ File Organization
+## ️ File Organization
 
 ### Root Level Files
 
@@ -126,31 +126,31 @@ text-to-video-generation/
 
 ---
 
-## 🎯 Key Features of This Structure
+##  Key Features of This Structure
 
-### ✅ Production-Ready
+###  Production-Ready
 - Clean separation of concerns
 - Comprehensive documentation
 - Industry-standard organization
 
-### ✅ Research-Friendly
+###  Research-Friendly
 - Each model isolated in own directory
 - Configs separate from code
 - Results organized by model
 
-### ✅ Portfolio-Ready
+###  Portfolio-Ready
 - Professional README with achievements
 - Clear documentation hierarchy
 - Easy for recruiters to navigate
 
-### ✅ Academic-Compliant
+###  Academic-Compliant
 - Comprehensive workbook included
 - Detailed technical documentation
 - Reproducible experiments
 
 ---
 
-## 🚀 Quick Navigation
+##  Quick Navigation
 
 ### Want to...
 
@@ -180,7 +180,7 @@ text-to-video-generation/
 
 ---
 
-## 📊 Project Stats
+##  Project Stats
 
 ### Files Created
 - **Documentation**: 8 markdown files + 1 Word document
@@ -196,16 +196,16 @@ text-to-video-generation/
 - **Total**: ~2100+ lines of documentation
 
 ### Key Features
-- ✅ Professional folder structure
-- ✅ Comprehensive .gitignore (200+ rules)
-- ✅ Complete requirements.txt (50+ packages)
-- ✅ Detailed YAML configs for each model
-- ✅ MIT License with attributions
-- ✅ Multi-level documentation (beginner → expert)
+-  Professional folder structure
+-  Comprehensive .gitignore (200+ rules)
+-  Complete requirements.txt (50+ packages)
+-  Detailed YAML configs for each model
+-  MIT License with attributions
+-  Multi-level documentation (beginner → expert)
 
 ---
 
-## 🎓 Academic Context
+##  Academic Context
 
 **Course**: SJSU DATA 298B - Master's Capstone
 **Semester**: Fall 2024
@@ -223,25 +223,25 @@ text-to-video-generation/
 
 ---
 
-## 🔒 What's NOT in Git (by design)
+##  What's NOT in Git (by design)
 
 These are excluded via `.gitignore`:
 
 ### Large Files
-- ✗ Trained model checkpoints (`.pth`, `.bin`, `.safetensors`)
-- ✗ Datasets (`.mp4`, `.avi`, video files)
-- ✗ Generated samples (results/)
-- ✗ Training logs (TensorBoard)
+-  Trained model checkpoints (`.pth`, `.bin`, `.safetensors`)
+-  Datasets (`.mp4`, `.avi`, video files)
+-  Generated samples (results/)
+-  Training logs (TensorBoard)
 
 ### Secrets
-- ✗ API keys and tokens
-- ✗ Cloud credentials
-- ✗ `.env` files
+-  API keys and tokens
+-  Cloud credentials
+-  `.env` files
 
 ### Temporary Files
-- ✗ `__pycache__/`
-- ✗ `.ipynb_checkpoints/`
-- ✗ Temporary outputs
+-  `__pycache__/`
+-  `.ipynb_checkpoints/`
+-  Temporary outputs
 
 **Why?** These files are too large or sensitive for Git. Use:
 - Git LFS for large model files
@@ -250,7 +250,7 @@ These are excluded via `.gitignore`:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 This is an academic capstone project, but contributions welcome:
 
@@ -263,34 +263,34 @@ See [LICENSE](LICENSE) for usage terms.
 
 ---
 
-## 📞 Contact & Support
+##  Contact & Support
 
 **Author**: Sainikhil
 **Project**: SJSU DATA 298B Capstone
 **Target**: FAANG Interviews - January 2025
 
-📧 Email: [Your Email]
-💼 LinkedIn: [Your LinkedIn]
-🌐 Portfolio: [Your Website]
+ Email: [Your Email]
+ LinkedIn: [Your LinkedIn]
+ Portfolio: [Your Website]
 
 ---
 
-## ⭐ Project Highlights
+##  Project Highlights
 
 ### Model 1: ModelScope
-- 📊 **Scale**: 10,000 training videos
+-  **Scale**: 10,000 training videos
 - ⏱️ **Time**: 9.48 hours training
-- 📉 **Loss**: 0.1036 (excellent convergence)
+-  **Loss**: 0.1036 (excellent convergence)
 
 ### Model 2: CogVideoX-2B
-- 🏆 **Achievement**: 82.2% quality improvement
-- 📈 **Metrics**: +100% fabric, +100% fit, +125% sleeves
+-  **Achievement**: 82.2% quality improvement
+-  **Metrics**: +100% fabric, +100% fit, +125% sleeves
 - ⏱️ **Time**: 62 minutes fine-tuning
 
 ### Model 3: AnimateDiff LoRA
-- ⚡ **Speed**: 8 minutes training (fastest)
-- 💡 **Efficiency**: 16M params (1% of base)
-- 📈 **Improvement**: 30.2% temporal consistency
+-  **Speed**: 8 minutes training (fastest)
+-  **Efficiency**: 16M params (1% of base)
+-  **Improvement**: 30.2% temporal consistency
 
 ---
 

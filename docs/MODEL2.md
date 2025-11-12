@@ -1,12 +1,12 @@
 # Model 2: CogVideoX-2B - Fashion Video Generation
 
-## 🎯 Overview
+##  Overview
 
 CogVideoX-2B is a state-of-the-art transformer-based text-to-video model fine-tuned for fashion garment generation. This implementation achieved a **remarkable 82.2% quality improvement** (4.5/10 → 8.2/10) through expert fine-tuning on the UBC Fashion Dataset, with dramatic improvements in fabric patterns (+100%), dress fit (+100%), and sleeve details (+125%).
 
 ---
 
-## 📊 Key Specifications
+##  Key Specifications
 
 | Metric | Value |
 |--------|-------|
@@ -23,7 +23,7 @@ CogVideoX-2B is a state-of-the-art transformer-based text-to-video model fine-tu
 
 ---
 
-## 🏆 Outstanding Results
+##  Outstanding Results
 
 ### Quality Improvements Breakdown
 
@@ -38,15 +38,15 @@ CogVideoX-2B is a state-of-the-art transformer-based text-to-video model fine-tu
 
 ### Why This Improvement Matters
 
-🎯 **Domain Expertise**: Fine-tuning on 480 fashion-specific videos embedded domain knowledge that generic models lack
+ **Domain Expertise**: Fine-tuning on 480 fashion-specific videos embedded domain knowledge that generic models lack
 
-⚡ **Efficiency**: Achieved 82.2% improvement in just 62 minutes of training
+ **Efficiency**: Achieved 82.2% improvement in just 62 minutes of training
 
-💎 **Quality**: Transformed from unusable (4.5/10) to production-ready (8.2/10)
+ **Quality**: Transformed from unusable (4.5/10) to production-ready (8.2/10)
 
 ---
 
-## 🏗️ Architecture Details
+## ️ Architecture Details
 
 ### Model Components
 
@@ -94,7 +94,7 @@ Output: Fashion Video (480x720, 48 frames)
 
 ---
 
-## 📚 Dataset: Fashion-Text2Video Dataset
+##  Dataset: Fashion-Text2Video Dataset
 
 ### Dataset Overview
 
@@ -149,7 +149,7 @@ Output: Fashion Video (480x720, 48 frames)
 
 ---
 
-## 🚀 Training Configuration
+##  Training Configuration
 
 ### Fine-tuning Strategy
 
@@ -225,7 +225,7 @@ vram_usage: ~76GB
 
 ---
 
-## 📈 Results & Performance
+##  Results & Performance
 
 ### Quality Assessment
 
@@ -233,11 +233,11 @@ vram_usage: ~76GB
 
 | Aspect | Base CogVideoX-2B | Fine-tuned (Ours) |
 |--------|-------------------|-------------------|
-| **Fabric Rendering** | ⭐⭐ (Basic) | ⭐⭐⭐⭐⭐ (Detailed) |
-| **Dress Fit** | ⭐⭐ (Poor) | ⭐⭐⭐⭐⭐ (Realistic) |
-| **Sleeve Details** | ⭐ (Inaccurate) | ⭐⭐⭐⭐⭐ (Precise) |
-| **Color Accuracy** | ⭐⭐⭐ (Moderate) | ⭐⭐⭐⭐ (High) |
-| **Overall Quality** | ⭐⭐ (4.5/10) | ⭐⭐⭐⭐ (8.2/10) |
+| **Fabric Rendering** |  (Basic) |  (Detailed) |
+| **Dress Fit** |  (Poor) |  (Realistic) |
+| **Sleeve Details** |  (Inaccurate) |  (Precise) |
+| **Color Accuracy** |  (Moderate) |  (High) |
+| **Overall Quality** |  (4.5/10) |  (8.2/10) |
 
 ### Quantitative Metrics
 
@@ -264,32 +264,32 @@ vram_usage: ~76GB
 
 ### Qualitative Analysis
 
-✅ **Major Improvements**:
+ **Major Improvements**:
 - **Fabric Patterns**: Now renders intricate patterns (lace, embroidery, prints)
 - **Dress Fit**: Realistic garment draping on body
 - **Sleeve Details**: Accurate sleeve types (bell, puff, fitted, long)
 - **Color Accuracy**: Precise color matching to prompts
 - **Motion Quality**: Natural fabric movement and flow
 
-✅ **Production-Ready Features**:
+ **Production-Ready Features**:
 - Consistent quality across diverse prompts
 - Handles complex fashion terminology
 - Generates realistic runway motion
 - Maintains temporal coherence
 
-⚠️ **Limitations**:
+️ **Limitations**:
 - Limited to fashion domain (not general-purpose)
 - Occasional issues with very complex patterns
 - 480x720 resolution (not 4K)
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Complete Training & Evaluation
 
 See the comprehensive notebook (includes both training and evaluation):
-📓 [notebooks/cogvideox/model_2_Fashion_Dataset_final_p1.ipynb](../notebooks/cogvideox/model_2_Fashion_Dataset_final_p1.ipynb)
+ [notebooks/cogvideox/model_2_Fashion_Dataset_final_p1.ipynb](../notebooks/cogvideox/model_2_Fashion_Dataset_final_p1.ipynb)
 
 ### Inference Example
 
@@ -341,7 +341,7 @@ for i, prompt in enumerate(prompts):
 
 ---
 
-## 🔧 Optimization Techniques
+##  Optimization Techniques
 
 ### Memory Optimization
 1. **VAE Slicing**: Process video in slices (reduces memory by 50%)
@@ -361,7 +361,7 @@ for i, prompt in enumerate(prompts):
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 
 ### 1. **Expert Fine-tuning is Powerful**
    - 480 videos achieved 82.2% quality improvement
@@ -385,7 +385,7 @@ for i, prompt in enumerate(prompts):
 
 ---
 
-## 🎯 Applications
+##  Applications
 
 ### E-commerce
 - **Product Video Generation**: Automatically generate garment videos
@@ -404,7 +404,7 @@ for i, prompt in enumerate(prompts):
 
 ---
 
-## 📁 File Structure
+##  File Structure
 
 ```
 models/cogvideox/
@@ -431,7 +431,7 @@ results/cogvideox/
 
 ---
 
-## 🔗 References
+##  References
 
 ### Dataset
 **Fashion-Text2Video Dataset**
@@ -458,13 +458,13 @@ For complete citations and licensing information, see [CITATIONS.md](../CITATION
 
 ---
 
-## 🏆 Achievements Summary
+##  Achievements Summary
 
-✨ **82.2% Quality Improvement** - From 4.5/10 to 8.2/10
-⚡ **62-Minute Training** - Fastest model to production-ready quality
-🎯 **100% Fabric Pattern Improvement** - Intricate details rendered accurately
-👗 **100% Dress Fit Improvement** - Realistic garment draping
-👔 **125% Sleeve Detail Improvement** - Precise sleeve rendering
+ **82.2% Quality Improvement** - From 4.5/10 to 8.2/10
+ **62-Minute Training** - Fastest model to production-ready quality
+ **100% Fabric Pattern Improvement** - Intricate details rendered accurately
+ **100% Dress Fit Improvement** - Realistic garment draping
+ **125% Sleeve Detail Improvement** - Precise sleeve rendering
 
 ---
 
