@@ -1,0 +1,341 @@
+# ============================================
+# Text-to-Video Generation Project .gitignore
+# ============================================
+
+# ===== CREDENTIALS & API KEYS =====
+# CRITICAL: Never commit secrets!
+.env
+.env.local
+.env.*.local
+credentials.json
+service-account.json
+*-credentials.json
+*.pem
+*.key
+*.keystore
+secrets.yaml
+secrets.yml
+config/secrets/
+
+# API Keys and Tokens
+*_API_KEY*
+*_TOKEN*
+*_SECRET*
+*.token
+api_keys.txt
+
+# Cloud Storage Credentials
+gcp_credentials.json
+aws_credentials
+azure_credentials.json
+
+# Hugging Face tokens
+.huggingface/
+hf_token.txt
+huggingface_token.txt
+
+# ===== LARGE MODEL FILES & CHECKPOINTS =====
+# Don't commit trained models to Git (use Git LFS or cloud storage)
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.h5
+*.pb
+*.onnx
+*.tflite
+
+# Model checkpoints and training artifacts
+checkpoints/
+checkpoint-*/
+model_checkpoints/
+saved_models/
+trained_models/
+outputs/checkpoints/
+
+# Large pickle files
+*.pkl
+*.pickle
+
+# ===== DATASET FILES =====
+# Don't upload datasets (mention download links in docs instead)
+datasets/
+data/raw/
+data/processed/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# Large data archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Dataset metadata (keep small metadata files if needed)
+# Uncomment to exclude:
+# *.csv
+# *.json
+# *.parquet
+
+# ===== PYTHON =====
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+.virtualenv
+.conda/
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# pyenv
+.python-version
+
+# ===== JUPYTER NOTEBOOK =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ===== PYCACHE & TEMP FILES =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+*~
+
+# OS temp files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== TRAINING LOGS & OUTPUTS =====
+# TensorBoard logs
+logs/
+tensorboard_logs/
+tb_logs/
+runs/
+lightning_logs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# Training outputs
+outputs/
+results/samples/
+generated_videos/
+inference_outputs/
+
+# Keep results structure but ignore large files
+results/**/*.mp4
+results/**/*.avi
+results/**/*.mov
+results/**/*.gif
+
+# ===== IDE & EDITOR =====
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+\#*\#
+
+# ===== SYSTEM FILES =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== CLOUD & DEPLOYMENT =====
+# Docker
+*.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# ===== TESTING =====
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Pytest
+.pytest_cache/
+test_results/
+
+# ===== BUILD & COMPILE =====
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+
+# ===== DOCUMENTATION =====
+# Sphinx documentation
+docs/_build/
+docs/.doctrees/
+site/
+
+# ===== MISC =====
+# Profiling data
+*.prof
+*.lprof
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Compressed files (if large)
+*.gz
+*.bz2
+*.xz
+
+# ===== PROJECT-SPECIFIC =====
+# Bucket access tokens
+bucket_access_token.txt
+gcs_token.txt
+s3_credentials.txt
+
+# Large checkpoint directories
+model_1_checkpoints/
+model_2_checkpoints/
+model_3_checkpoints/
+
+# Evaluation results (keep metrics, exclude videos)
+*.evaluation_videos/
+
+# Temporary inference outputs
+temp_outputs/
+tmp_videos/
+
+# ===== EXCEPTIONS (Keep These) =====
+# Keep small config files
+!configs/*.yaml
+!configs/*.yml
+!configs/*.json
+
+# Keep documentation
+!docs/*.md
+!docs/*.pdf
+# !docs/*.docx  # Uncomment if you want to commit the Word doc
+
+# Keep requirements
+!requirements.txt
+!environment.yml
+!pyproject.toml
+
+# Keep README and LICENSE
+!README.md
+!LICENSE
+
+# Keep small sample outputs (if any)
+!results/samples/*.png
+!results/samples/*.jpg
+
+# ===== END =====

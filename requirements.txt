@@ -1,0 +1,137 @@
+# ============================================
+# Text-to-Video Generation - Requirements
+# ============================================
+# Python 3.10+
+# CUDA 11.8+ required for GPU support
+
+# ===== CORE DEEP LEARNING =====
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+transformers>=4.35.0
+diffusers>=0.24.0
+accelerate>=0.25.0
+
+# ===== COMPUTER VISION & VIDEO =====
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+Pillow>=10.0.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+decord>=0.6.0
+av>=10.0.0
+
+# ===== SCIENTIFIC COMPUTING =====
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+scikit-image>=0.21.0
+
+# ===== DATA HANDLING =====
+pandas>=2.0.0
+datasets>=2.14.0  # Hugging Face datasets
+pyarrow>=13.0.0
+
+# ===== MODEL TRAINING & OPTIMIZATION =====
+peft>=0.7.0  # Parameter-Efficient Fine-Tuning (LoRA)
+bitsandbytes>=0.41.0  # 8-bit optimizers
+xformers>=0.0.22  # Memory-efficient attention
+einops>=0.7.0  # Tensor operations
+safetensors>=0.4.0  # Safe model serialization
+
+# ===== EVALUATION METRICS =====
+lpips>=0.1.4  # Perceptual similarity
+pytorch-fid>=0.3.0  # Frechet Inception Distance
+torchmetrics>=1.2.0
+clip @ git+https://github.com/openai/CLIP.git  # CLIP score for text-video alignment
+
+# ===== LOGGING & MONITORING =====
+tensorboard>=2.14.0
+wandb>=0.15.0  # Weights & Biases (optional)
+tqdm>=4.66.0
+rich>=13.5.0  # Pretty terminal output
+
+# ===== CONFIGURATION & UTILITIES =====
+omegaconf>=2.3.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+hydra-core>=1.3.0
+
+# ===== JUPYTER & DEVELOPMENT =====
+jupyter>=1.0.0
+notebook>=7.0.0
+ipywidgets>=8.1.0
+ipython>=8.15.0
+
+# ===== MODEL-SPECIFIC =====
+# ModelScope dependencies
+modelscope>=1.9.0
+
+# CogVideoX dependencies
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# AnimateDiff dependencies
+controlnet-aux>=0.0.7
+
+# ===== OPTIONAL BUT RECOMMENDED =====
+# For better performance
+ninja>=1.11.0  # Faster compilation
+flash-attn>=2.3.0  # Flash attention (requires specific CUDA setup)
+
+# For data augmentation
+albumentations>=1.3.0
+imgaug>=0.4.0
+
+# For mixed precision training
+apex  # NVIDIA Apex (install from source if needed)
+
+# ===== DEPLOYMENT & API (Optional) =====
+# Uncomment if building API/web interface
+# fastapi>=0.103.0
+# uvicorn>=0.23.0
+# gradio>=3.50.0
+# streamlit>=1.27.0
+
+# ===== TESTING & QUALITY (Development) =====
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.9.0
+flake8>=6.1.0
+isort>=5.12.0
+mypy>=1.5.0
+
+# ===== CLOUD & STORAGE =====
+# Uncomment if using cloud storage
+# google-cloud-storage>=2.10.0  # GCP
+# boto3>=1.28.0  # AWS S3
+# azure-storage-blob>=12.18.0  # Azure
+
+# ===== NOTES =====
+# 1. For ModelScope training: Ensure CUDA 11.8+ and A100 80GB GPU
+# 2. For CogVideoX: Requires transformers >= 4.35.0 with CogVideoX support
+# 3. For AnimateDiff LoRA: Install peft for LoRA support
+# 4. Flash Attention: May require manual installation based on CUDA version
+#    pip install flash-attn --no-build-isolation
+# 5. xformers: Install with matching PyTorch version
+#    pip install xformers --index-url https://download.pytorch.org/whl/cu118
+
+# ===== INSTALLATION INSTRUCTIONS =====
+# Basic installation:
+#   pip install -r requirements.txt
+#
+# With GPU support (CUDA 11.8):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#   pip install -r requirements.txt
+#
+# For development:
+#   pip install -r requirements.txt
+#   pip install -e .  # If setup.py is created
+
+# ===== VERSION COMPATIBILITY =====
+# Tested on:
+# - Python 3.10.12
+# - CUDA 11.8
+# - PyTorch 2.1.0
+# - Ubuntu 20.04 / 22.04
+# - NVIDIA A100 (80GB) / H200 (140GB)

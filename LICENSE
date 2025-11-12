@@ -1,0 +1,101 @@
+MIT License
+
+Copyright (c) 2024 Sainikhil - SJSU DATA 298B Capstone Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+THIRD-PARTY LICENSES
+
+This project uses the following third-party models and libraries:
+
+1. ModelScope
+   License: Apache License 2.0
+   Source: https://modelscope.cn/
+
+2. CogVideoX-2B
+   License: Apache License 2.0 (THUDM)
+   Source: https://github.com/THUDM/CogVideo
+
+3. Stable Diffusion
+   License: CreativeML Open RAIL-M
+   Source: https://github.com/CompVis/stable-diffusion
+
+4. AnimateDiff
+   License: Apache License 2.0
+   Source: https://animatediff.github.io/
+
+5. PyTorch, Transformers, Diffusers
+   License: Apache License 2.0
+   Source: https://pytorch.org/, https://huggingface.co/
+
+DATASET LICENSES AND ATTRIBUTIONS
+
+1. Something-Something V2 Dataset
+   Citation: Goyal, R., et al. (2017). The "Something Something" Video Database
+            for Learning and Evaluating Visual Common Sense. ICCV 2017.
+   License: Academic research use only
+   Source: https://www.qualcomm.com/developer/software/something-something-v-2-dataset
+
+   IMPORTANT: This dataset is provided by Qualcomm for academic research purposes.
+   Commercial use requires separate licensing from Qualcomm. Contact Qualcomm for
+   commercial licensing inquiries.
+
+   Usage in this project: 10,000 videos for ModelScope training (Model 1)
+
+2. Fashion-Text2Video Dataset
+   Citation: Jiang, Y., Yang, S., Koh, T.L., Wu, W., Loy, C.C., & Liu, Z. (2023).
+            Text2Performer: Text-Driven Human Video Generation. ICCV 2023.
+   License: Academic research use only
+   Source: https://github.com/yumingj/Fashion-Text2Video
+
+   IMPORTANT: This dataset is part of the Text2Performer project. Please cite
+   the original ICCV 2023 paper when using this dataset.
+
+   Usage in this project: 480 fashion videos for CogVideoX-2B fine-tuning (Model 2)
+   Achievement: 82.2% quality improvement
+
+3. MSR-VTT Dataset
+   Citation: Xu, J., Mei, T., Yao, T., & Rui, Y. (2016). MSR-VTT: A Large Video
+            Description Dataset for Bridging Video and Language. CVPR 2016.
+   License: Research Use (Microsoft Research - verify terms for commercial use)
+   Source: https://huggingface.co/datasets/friedrichor/MSR-VTT
+   Original: Microsoft Research
+
+   IMPORTANT: This dataset was originally released by Microsoft Research. The
+   Hugging Face version is a redistribution. For commercial use, verify licensing
+   terms with Microsoft Research.
+
+   Usage in this project: 200 anime-style videos selected for AnimateDiff LoRA
+   training (Model 3)
+
+IMPORTANT LEGAL NOTICES:
+
+- This repository's code is licensed under MIT License (see above)
+- Dataset licenses are MORE RESTRICTIVE than the code license
+- Users MUST obtain proper licenses for datasets independently
+- Commercial use of this project requires:
+  1. Compliance with MIT License for code (permitted)
+  2. Separate commercial licenses for datasets (if applicable)
+  3. Review of model licenses (most are Apache 2.0, permissive)
+
+For complete citations and attribution requirements, see CITATIONS.md
+
+Please respect all third-party licenses when using this software.
