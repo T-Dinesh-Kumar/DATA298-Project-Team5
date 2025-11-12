@@ -1,4 +1,4 @@
-# 🎬 Multi-Model Text-to-Video Generation System
+#  Multi-Model Text-to-Video Generation System
 
 **SJSU DATA 298B Capstone Project | January 2025**
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 Key Achievements
+##  Key Achievements
 
 | Model | Domain | Training Time | Key Metric | Highlight |
 |-------|--------|---------------|------------|-----------|
@@ -19,16 +19,16 @@
 | **CogVideoX-2B** | Fashion | 62 minutes | **82.2% quality improvement** | 4.5/10 → 8.2/10 rating |
 | **AnimateDiff LoRA** | Anime | **8 minutes** | 30.2% temporal consistency | Only 16M params (1% of base) |
 
-### 🏆 Notable Results
+###  Notable Results
 
-- **🎯 Fashion Model**: Achieved 82.2% quality improvement with +100% fabric pattern accuracy and +125% sleeve detail precision
-- **⚡ Speed Champion**: AnimateDiff trained in just 8 minutes using parameter-efficient LoRA fine-tuning
-- **📈 Scale Master**: ModelScope successfully trained on 10,000 videos from Something-Something V2 dataset
-- **💡 Efficiency Expert**: AnimateDiff uses only 16M trainable parameters (1% of base model) while achieving 30.2% temporal consistency improvement
+- ** Fashion Model**: Achieved 82.2% quality improvement with +100% fabric pattern accuracy and +125% sleeve detail precision
+- ** Speed Champion**: AnimateDiff trained in just 8 minutes using parameter-efficient LoRA fine-tuning
+- ** Scale Master**: ModelScope successfully trained on 10,000 videos from Something-Something V2 dataset
+- ** Efficiency Expert**: AnimateDiff uses only 16M trainable parameters (1% of base model) while achieving 30.2% temporal consistency improvement
 
 ---
 
-## 📊 Architecture Comparison
+##  Architecture Comparison
 
 ### Model 1: ModelScope (Diffusion-based)
 ```
@@ -74,7 +74,7 @@ Stable Diffusion + Motion Module + LoRA Adapters → Anime Video
 
 ---
 
-## 🏗️ Repository Structure
+##  Repository Structure
 
 ```
 text-to-video-generation/
@@ -108,7 +108,7 @@ text-to-video-generation/
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 This capstone project demonstrates:
 
@@ -150,7 +150,7 @@ This capstone project demonstrates:
 
 ---
 
-## 💻 Technical Stack
+##  Technical Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -163,7 +163,7 @@ This capstone project demonstrates:
 
 ---
 
-## 🚦 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ```bash
@@ -210,7 +210,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📈 Training Details
+##  Training Details
 
 ### Hardware Requirements
 
@@ -230,7 +230,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 Detailed Results
+##  Detailed Results
 
 ### Model 1: ModelScope
 - **Training Loss Progression**: Converged to 0.1036
@@ -254,7 +254,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎓 Academic Context
+##  Academic Context
 
 **Course**: DATA 298B - Master's Capstone Project
 **Institution**: San José State University
@@ -268,7 +268,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎯 Use Cases
+##  Use Cases
 
 ### ModelScope - Human Action Generation
 - **Robotics**: Training data for action recognition systems
@@ -287,7 +287,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔍 Key Insights & Learnings
+##  Key Insights & Learnings
 
 ### 1. **Scale vs. Efficiency Trade-off**
    - ModelScope shows that scale (10K videos) requires significant compute (9.48 hours)
@@ -313,7 +313,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - **[Model 1: ModelScope](docs/MODEL1.md)** - Human action generation architecture and training details
 - **[Model 2: CogVideoX-2B](docs/MODEL2.md)** - Fashion video generation with 82.2% improvement
@@ -322,7 +322,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 This is an academic capstone project. For questions or collaboration:
 - **Contact**: [Your Email]
@@ -331,7 +331,7 @@ This is an academic capstone project. For questions or collaboration:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -339,7 +339,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 ### Academic & Research
 - **SJSU DATA 298B** - Course and academic guidance
@@ -359,38 +359,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **For complete citations and BibTeX entries**, see [CITATIONS.md](CITATIONS.md)
 
----
 
-## 📞 Contact & Portfolio
+** If this project interests you, please star the repository!**
 
-**Sainikhil** | SJSU DATA 298B Capstone
-📧 Email: [Your Email]
-💼 LinkedIn: [Your LinkedIn]
-🌐 Portfolio: [Your Website]
-📅 Target: FAANG Interviews - January 2025
-
----
-
-## 🎯 For Recruiters
-
-**Why This Project Stands Out:**
-
-✅ **Production-Ready**: Complete ML pipeline from data to deployment
-✅ **Research Depth**: Comprehensive comparative study with quantitative metrics
-✅ **Scalability**: Proven on datasets ranging from 200 to 10,000 videos
-✅ **Efficiency**: Parameter-efficient methods (LoRA) with 30.2% improvement
-✅ **Impact**: 82.2% quality improvement in domain-specific application
-✅ **Documentation**: Industry-standard code organization and documentation
-
-**Skills Demonstrated:**
-- Deep Learning (PyTorch, Diffusion Models, Transformers)
-- Large-Scale ML Training (A100/H200 GPUs)
-- Model Optimization (LoRA, Mixed Precision, Gradient Checkpointing)
-- Research & Experimentation (Comparative analysis, metric selection)
-- Software Engineering (Clean code, documentation, reproducibility)
-
----
-
-**⭐ If this project interests you, please star the repository!**
-
-*Last Updated: November 2024*
+*Last Updated: 11th November 2025*
